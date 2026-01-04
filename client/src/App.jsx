@@ -51,7 +51,7 @@ function App() {
 
     try {
       // Gửi cờ god=true lên Server
-      const response = await fetch(`http://localhost:5000/api/spin?bet=${betAmount}&isFree=${isFreeRound}&god=${useGodMode}`);
+      const response = await fetch(`https://mahjong-gold.onrender.com/api/spin?bet=${betAmount}&isFree=${isFreeRound}&god=${useGodMode}`);
       const data = await response.json();
 
       if (response.status === 400) {
